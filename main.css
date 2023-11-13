@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, p {
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    background: hsl(27, 66%, 92%);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+header,
+section,
+footer {
+    padding: 1.5em;
+}
+
+section,
+footer {
+    background: hsl(33, 100%, 98%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: hsl(10, 79%, 65%);
+    border-radius: 0.5em;
+    color: hsl(33, 100%, 98%);
+}
+
+img {
+    width: 3em;
+}
+
+main {
+    min-width: max(25vw, 2em);
+}
+
+section {
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+}
+
+.bargroup {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.8em;
+}
+
+.barcontainer {
+    display: grid;
+    min-height: 8em;
+}
+
+.bargraph {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bar {
+    border-radius: 0.2em;
+    background: hsl(10, 79%, 65%);
+    align-self: end;
+}
+
+.bar.current {
+    background: hsl(186, 34%, 60%);
+}
+
+.tooltip-show {
+    display: block;
+    background: hsl(25, 47%, 15%);
+    color: hsl(33, 100%, 98%);
+    font-size: 0.25em;
+    padding: 0.2em 0.5em;
+    border-radius: 0.4em;
+}
+
+.tooltip-hide {
+    display: none;
+}
+
+footer {
+    background: hsl(33, 100%, 98%);
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .right {
+    text-align: right;
+}
